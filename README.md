@@ -18,7 +18,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Description
 
-You will notice there are several JavaScript files being brought into the index.html file.  Each of those files contain JavaScript problems you need to solve.  If you get stuck on something, skip over it and come back to it later.
+You will notice there are several JavaScript files being brought into the index.html file. Each of those files contain JavaScript problems you need to solve. If you get stuck on something, skip over it and come back to it later.
 
 In meeting the minimum viable product (MVP) specifications listed below, you should have a console full of correct responses to the problems given.
 
@@ -30,33 +30,46 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach` iterates through an array, and performs any manipulations directly to that array. `.map` returns a new array with the manipulations made.
+
 2. What is the difference between a function and a method?
+
+a Function is a block of instructions that returns a result to the main program. a Method is something that can be done to an Object that affects that particular object.
 
 3. What is closure?
 
+a Closure gives you access to the scope of an outter function from within the inner functions.
+
 4. Describe the four rules of the 'this' keyword.
 
+1.By default, `this` is window bound.
+2.With implicit binding,the left of the dot is what is being referenced to. This is 80% of the use cases for `this`
+3.Explicit bindings pass arguments to the Object, and depending on the type of binding (`call`, `apply`, `bind`) will either immediately invoke the function, or will return a function in memory without invoking it. in any case, `this` refers to the object being called, applied, or bound.
+4.`new` creates a new object, and `this` points to that object.
+
 5. Why do we need super() in an extended class?
+
+
+`super()` calls upon the parent class to pull the parameters from that class down into the child class, allowing the child class to contain its own parameters, and retain the parent parameters as well.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+-   [x] Create a forked copy of this project.
+-   [x] Add TL as collaborator on Github.
+-   [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+-   [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+-   [x] Create a pull request before you start working on the project requirements. You will continuously push your updates throughout the project.
+-   [x] You are now ready to build this project with your preferred IDE
+-   [x] Implement the project on your Branch, committing changes regularly.
+-   [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your team lead as a Reviewer on the Pull-request
-- [ ] TL then will count the HW as done by  merging the branch back into master.
-
+-   [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
+-   [x] Add your team lead as a Reviewer on the Pull-request
+-   [ ] TL then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
@@ -65,20 +78,28 @@ Your finished project must include all of the following requirements:
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
 ## Task 1: Objects and Arrays
-Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+
+Test your knowledge of objects and arrays.
+
+-   [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started. Read the instructions carefully!
 
 ## Task 2: Functions
-This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+
+This challenge takes a look at callbacks and closures as well as scope.
+
+-   [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
+
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+
+-   [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
+
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+
+-   [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
